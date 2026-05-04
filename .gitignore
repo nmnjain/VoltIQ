@@ -1,0 +1,156 @@
+# ============================================================================
+# PYTHON - Virtual Environments & Packages
+# ============================================================================
+venv/
+env/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# PYTHON - Compiled Files & Cache
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+*.log
+.tox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================================================
+# IDE & Editor Files
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.iml
+.atom/
+.env.local
+.env.*.local
+
+# ============================================================================
+# TESTING & TEMPORARY FILES
+# ============================================================================
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+.hypothesis/
+htmlcov/
+test-results/
+temp/
+tmp/
+
+
+# ============================================================================
+# LOG FILES & RUNTIME OUTPUT
+# ============================================================================
+*.log
+*.out
+dashboard_output.log
+dashboard_error.log
+*.pid
+
+# ============================================================================
+# DATA FILES (Raw test data, keep processed only)
+# ============================================================================
+data/intraday_analysis_detailed.csv
+data/intraday_simulation.csv
+
+# Keep: data/synthetic/ and data/processed/
+# They can be regenerated but useful for reproducibility
+
+# ============================================================================
+# JUPYTER NOTEBOOK CACHE
+# ============================================================================
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ============================================================================
+# OS-SPECIFIC FILES
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================================================
+# ENVIRONMENT VARIABLES
+# ============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================================================
+# MISC TEMPORARY FILES
+# ============================================================================
+*.tmp
+*.bak
+*.backup
+*~
+.cache/
+*.pickle
+*.pkl.bak
+
+# ============================================================================
+# SYSTEM FILES
+# ============================================================================
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.directory
+.nfs*
+
+# ============================================================================
+# BUILD & DISTRIBUTION ARTIFACTS
+# ============================================================================
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+
