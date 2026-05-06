@@ -1,2 +1,3 @@
-run = "cd dashboard && python app_clean.py"
+run = "pip install -r requirements.txt && cd dashboard && python app_clean.py"
+build = "pip install -r requirements.txt"
 modules = ["python-3.10:v18-20230807-322e88b"]
