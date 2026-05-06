@@ -198,35 +198,6 @@ python app_clean.py
 - What-if scenarios (cloud cover, wind speed impacts)
 - Decision insights (backup power recommendations)
 
-## Competition Presentation Flow
-
-1. **Slide 1: Show Visual 4 (Model Comparison)**
-   - "We compared three approaches..."
-   - "XGBoost wins on both metrics..."
-   - "8.7x more accurate than baseline"
-
-2. **Slide 2: Show Visual 1 (Forecast + Uncertainty)**
-   - "Here's our 7-day forecast"
-   - "Blue line = prediction, green dots = actual"
-   - "The band = uncertainty (we know when we're unsure)"
-
-3. **Slide 3: Show Visual 3 (Feature Drivers)**
-   - "Our model learned what matters"
-   - "Wind speed, irradiance, cloud cover"
-   - "We can explain each prediction"
-
-4. **Slide 4: Show Visual 2 (Intra-day Update)**
-   - "Forecasts improve throughout the day"
-   - "Real-time updates reduce uncertainty"
-   - "Morning forecast vs actual by evening"
-
-5. **Q&A with Explainability**
-   - Use top_drivers to explain specific predictions
-   - Show P10/P50/P90 uncertainty quantification
-   - Discuss synthetic data realism
-
----
-
 ## Technical Highlights
 
 ### Data Realism
@@ -251,21 +222,6 @@ python app_clean.py
 - **Feature scaling** (StandardScaler prevents feature dominance)
 - **Error handling** with informative messages
 
-## Deployment Notes
-
-### Production Deployment
-
-1. Models are pickled in `src/models/`
-2. Use `PredictionEngine` class for real predictions
-3. Scaler must be applied before sending to model
-4. Uncertainty factors are pre-computed from training residuals
-
-### Real Data Integration
-
-1. Replace `data/synthetic/raw_data_with_weather.csv` with real data
-2. No code changes needed—feature engineering pipeline is identical
-3. Retrain model: `ModelTrainer.train_xgboost()`
-4. Recalibrate uncertainty: `QuantilePredictor.train_quantile_models()`
 
 ### Future Enhancements
 
